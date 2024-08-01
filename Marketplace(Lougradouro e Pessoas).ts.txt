@@ -1,0 +1,49 @@
+class Lougradouro{
+   protected rua:string
+   protected numero:string
+   protected cidade:string
+   protected estado:string
+   protected enderecoDeEntrega:boolean
+
+constructor(rua:string,numero:string,cidade:string,estado:string,enderecoDeEntrega:boolean){
+  
+ this.rua=rua
+ this.numero=numero
+ this.cidade=cidade
+ this.estado=estado
+ this.enderecoDeEntrega=enderecoDeEntrega
+}
+ public setRua(rua:string):void{
+   this.rua=rua
+ }
+
+public setNumero(numero:string):void{
+   this.numero=numero
+}
+public setCidade(cidade:string):void{
+   this.cidade=cidade
+}
+public setEstado(estado:string):void{
+   this.estado=estado
+}
+}
+
+class pessoas{
+   protected cpf:string
+   protected idade:number
+   protected email:string
+   protected telefone:string[2]
+   protected cpf_cnpj:string
+   private lougradouro:Lougradouro[]=[]
+
+ constructor(cpf:string,idade:number,email:string,telefone:string[2],cpf_cnpj:string,lougradouro:Lougradouro[]=[]){
+   
+   this.cpf=cpf
+   this.idade=idade
+   this.email=email
+   this.telefone=telefone
+   this.cpf_cnpj=cpf_cnpj
+   this.lougradouro=lougradouro
+   }
+
+}
